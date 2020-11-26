@@ -16,7 +16,7 @@ services:
     networks:
       - clarusnet
   app-server:
-    image: "${ECR_REGISTRY}/${APP_REPO_NAME}:latest"
+    image: "${ECR_REGISTRY}/${APP_REPO_NAME}:latest" #buraya image i çekeceği adresi direk yazmamız gerekiyor.
     deploy:
       mode: global
       update_config:
